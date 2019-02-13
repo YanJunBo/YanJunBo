@@ -1,0 +1,126 @@
+{
+  "cmd_id": -140,
+  "status": 200,
+  "msg": "success",
+  "data": {
+    "goods": {
+      "physical": {
+        "highly_recommend": [],
+        "recommend": {
+          "page": 0,
+          "total": 1,
+          "totalsize": "2",
+          "records": "2",
+          "items": [{
+            "groupbuy_id": "40",
+            "groupbuy_name": "van\u513f\u7ae5\u5b55\u5987\u6210\u4eba\u5168\u8102\u9ad8\u9499\u4f4e\u6e29\u9c9c\u5976250ML\u88c5*24\u76d2\uff08\u56e2\uff09",
+            "groupbuy_starttime": "2019-02-02 16:00:00",
+            "groupbuy_endtime": "2019-08-12 14:00:00",
+            "goods_id": "8880",
+            "common_id": "1095",
+            "goods_name": "van\u513f\u7ae5\u5b55\u5987\u6210\u4eba\u5168\u8102\u9ad8\u9499\u4f4e\u6e29\u9c9c\u5976250ML\u88c5*24\u76d2\uff08\u56e2\u8d2d\uff09",
+            "shop_id": "32",
+            "shop_name": "van\u5b98\u65b9\u65d7\u8230\u5e97",
+            "goods_price": "578.00",
+            "groupbuy_price": "298.00",
+            "groupbuy_rebate": "0.00",
+            "groupbuy_virtual_quantity": "0",
+            "groupbuy_upper_limit": "0",
+            "groupbuy_buyer_count": "0",
+            "groupbuy_buy_quantity": "0",
+            "groupbuy_intro": "",
+            "groupbuy_state": "2",
+            "groupbuy_recommend": "1",
+            "groupbuy_type": "1",
+            "groupbuy_views": "0",
+            "groupbuy_cat_id": "0",
+            "groupbuy_scat_id": "0",
+            "groupbuy_city_id": "0",
+            "groupbuy_area_id": "0",
+            "groupbuy_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/99eb64ba4386919cf1af7e806cad0527\/10246\/32\/image\/20190202\/1549091760506689.png!400x400.png",
+            "groupbuy_image_rec": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/99eb64ba4386919cf1af7e806cad0527\/10246\/32\/image\/20190202\/1549091768817838.png!612x318.png",
+            "groupbuy_remark": "",
+            "id": "40",
+            "groupbuy_recommend_label": "\u9996\u9875\u63a8\u8350",
+            "groupbuy_state_label": "\u6b63\u5e38",
+            "groupbuy_type_label": "\u5b9e\u7269",
+            "reduce": 280,
+            "rate": "5.16",
+            "goods_stock": "500",
+            "is_start": 1
+          }, {
+            "groupbuy_id": "41",
+            "groupbuy_name": "van\u5df4\u6c0f\u4f4e\u6e29\u5168\u8102\u9c9c\u5976 \u6fb3\u6d32\u539f\u88c5\u8fdb\u53e31L*24\u76d2\uff08\u56e2\u8d2d\uff09",
+            "groupbuy_starttime": "2019-02-02 16:00:00",
+            "groupbuy_endtime": "2019-06-12 14:00:00",
+            "goods_id": "8877",
+            "common_id": "1092",
+            "goods_name": "van\u5df4\u6c0f\u4f4e\u6e29\u5168\u8102\u9c9c\u5976 \u6fb3\u6d32\u539f\u88c5\u8fdb\u53e31L*24\u76d2\uff08\u56e2\u8d2d\uff09",
+            "shop_id": "32",
+            "shop_name": "van\u5b98\u65b9\u65d7\u8230\u5e97",
+            "goods_price": "1788.00",
+            "groupbuy_price": "928.00",
+            "groupbuy_rebate": "0.00",
+            "groupbuy_virtual_quantity": "0",
+            "groupbuy_upper_limit": "0",
+            "groupbuy_buyer_count": "0",
+            "groupbuy_buy_quantity": "0",
+            "groupbuy_intro": "",
+            "groupbuy_state": "2",
+            "groupbuy_recommend": "1",
+            "groupbuy_type": "1",
+            "groupbuy_views": "0",
+            "groupbuy_cat_id": "0",
+            "groupbuy_scat_id": "0",
+            "groupbuy_city_id": "0",
+            "groupbuy_area_id": "0",
+            "groupbuy_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/99eb64ba4386919cf1af7e806cad0527\/10246\/32\/image\/20190202\/1549091832824186.png!400x400.png",
+            "groupbuy_image_rec": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/99eb64ba4386919cf1af7e806cad0527\/10246\/32\/image\/20190202\/1549091839992920.png!612x318.png",
+            "groupbuy_remark": "",
+            "id": "41",
+            "groupbuy_recommend_label": "\u9996\u9875\u63a8\u8350",
+            "groupbuy_state_label": "\u6b63\u5e38",
+            "groupbuy_type_label": "\u5b9e\u7269",
+            "reduce": 860,
+            "rate": "5.19",
+            "goods_stock": "500",
+            "is_start": 1
+          }]
+        }
+      },
+      "virtual": {
+        "highly_recommend": [],
+        "recommend": {
+          "page": 0,
+          "total": 0,
+          "totalsize": "0",
+          "records": "0",
+          "items": []
+        }
+      }
+    },
+    "cat": {
+      "physical": [],
+      "virtual": []
+    },
+    "location": "\u5168\u56fd",
+    "banner": {
+      "slider1": {
+        "slider1_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/plantform\/99eb64ba4386919cf1af7e806cad0527\/image\/20181120\/1542701616217791.png!1043x396.png",
+        "live_link1": "http:\/\/mall.jscntech.com\/index.php?ctl=Goods_Goods&met=goods&type=goods&gid=8880"
+      },
+      "slider2": {
+        "slider2_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/plantform\/99eb64ba4386919cf1af7e806cad0527\/image\/20181105\/1541408788859371.jpg!1043x396.jpg",
+        "live_link2": "http:\/\/mall.jscntech.com\/index.php?ctl=Goods_Goods&met=goods&type=goods&gid=8877"
+      },
+      "slider3": {
+        "slider3_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/plantform\/99eb64ba4386919cf1af7e806cad0527\/image\/20180606\/1528274613202709.jpg!1043x396.jpg",
+        "live_link3": "http:\/\/mall.jscntech.com\/index.php?ctl=Goods_Goods&met=goods&type=goods&gid=54"
+      },
+      "slider4": {
+        "slider4_image": "http:\/\/mall.jscntech.com\/image.php\/shop\/data\/upload\/media\/plantform\/99eb64ba4386919cf1af7e806cad0527\/image\/20180613\/1528869085814818.png!1043x396.png",
+        "live_link4": "http:\/\/mall.jscntech.com\/index.php?ctl=Goods_Goods&met=goods&type=goods&gid=111"
+      }
+    }
+  }
+}

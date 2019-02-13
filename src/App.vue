@@ -1,26 +1,8 @@
 <template>
     <div id="app">
         <!-- <img src="./assets/logo.png"> -->
-        <router-view/>
+        <router-view />
 
-        <mt-tabbar v-model="selected">
-            <mt-tab-item id="home">
-                <!-- <img slot="icon" src="../assets/100x100.png"> -->
-                首页
-            </mt-tab-item>
-            <mt-tab-item id="order">
-                <!-- <img slot="icon" src="../assets/100x100.png"> -->
-                订单
-            </mt-tab-item>
-            <mt-tab-item id="see">
-                <!-- <img slot="icon" src="../assets/100x100.png"> -->
-                发现
-            </mt-tab-item>
-            <mt-tab-item id="main">
-                <!-- <img slot="icon" src="../assets/100x100.png"> -->
-                我的
-            </mt-tab-item>
-        </mt-tabbar>
     </div>
 </template>
 
@@ -29,19 +11,40 @@ export default {
     name: "App",
     data() {
         return {
-            selected: "home"
+            selected: "外卖"
         };
     }
 };
 </script>
 
 <style>
+a {
+    text-decoration: none;
+    color: #303030;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.content {
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+html,
+body {
+    background-color: #f4f4f4;
+}
 #app {
     font-family: "Avenir", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* text-align: center; */
-    /* color: #2c3e50; */
-    /* margin-top: 60px; */
+}
+header,
+footer {
+    z-index: 2 !important;
+}
+.mint-header {
+    background-color: #ff0036 !important;
+    height: 45px !important;
 }
 </style>
