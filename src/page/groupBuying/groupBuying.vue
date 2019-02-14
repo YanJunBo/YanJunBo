@@ -58,12 +58,12 @@ export default {
     var _self = this;
     setInterval(function() {
       //时间的倒计时
-      _self.countDown();
+      _self.countDown(); 
     }, 1000);
   },
   methods: {
     loadData() {
-      
+
       var _self = this;
       var data = tuanGouJson;
       // _self.common.get(

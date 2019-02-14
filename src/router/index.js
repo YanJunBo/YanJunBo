@@ -6,6 +6,7 @@ import classify from '@/page/indexPage/classify'
 import Main from '@/page/indexPage/main'
 import film from '@/page/indexPage/film'
 import productDetails from '@/page/goods/product_details'
+import confirm_order from '@/page/goods/confirm_order'
 import goodsComment from '@/page/goods/goods_comment'
 import orderList from '@/page/order/orderList'
 import orderDetails from '@/page/order/order_details'
@@ -43,7 +44,10 @@ export default new Router({
     path: '/page/goods/product_details',
     name: 'product_details',
     component: productDetails
-
+  }, {
+    path: '/page/goods/confirm_order',
+    name: 'confirm_order',
+    component: confirm_order
   }, {
     path: '/Main',
     name: 'Main',

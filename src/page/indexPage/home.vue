@@ -98,7 +98,7 @@ export default {
           src: require("../../assets/pinpai.png"),
           id: "1",
           text: "品牌",
-          path:""
+          path:"classify"
         },
         {
           src: require("../../assets/tuangou.png"),

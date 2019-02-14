@@ -140,7 +140,10 @@
             class="join_shopCar fg-2"
             v-on:click="openBuyPop"
           >加入购物车</div>
-          <div class="buy fg-2">立即购买</div>
+          <div
+            v-on:click="buying"
+            class="buy fg-2"
+          >立即购买</div>
         </div>
 
       </footer>
@@ -230,8 +233,8 @@ export default {
   },
   data() {
     return {
-      userId:this.common.getCookie("user_id"),
-      userKey:this.common.getCookie("user_key"),
+      userId: this.common.getCookie("user_id"),
+      userKey: this.common.getCookie("user_key"),
       shop_id: "",
       goodsId: this.$route.query.goodsId,
       popupVisible: false,
@@ -498,6 +501,25 @@ export default {
       this.$router.push({
         path: "../shop/shop_details",
         query: {
+          shopId: _self.shop_id
+        }
+      });
+    },
+    buying() {
+      var _self = this;
+      if (!_self.userId || _self.userId == "") {
+        _self.$router.push({
+          path: "../user/login",
+          query: {
+           
+          }
+        });
+        return;
+      }
+      _self.$router.push({
+        path: "confirm_order",
+        query: {
+          goodsId: _self.goodsId,
           shopId: _self.shop_id
         }
       });
