@@ -138,10 +138,10 @@
           </div>
           <div
             class="join_shopCar fg-2"
-            v-on:click="openBuyPop"
+            v-on:click="openPopView('addCar')"
           >加入购物车</div>
           <div
-            v-on:click="buying"
+            v-on:click="openPopView('buying')"
             class="buy fg-2"
           >立即购买</div>
         </div>
@@ -205,7 +205,7 @@
       </div>
       <div
         class="confirm"
-        v-on:click="addShopCar"
+        v-on:click="config"
       >确认</div>
     </popup>
     <!-- 商品评论右侧弹出 -->
@@ -237,6 +237,7 @@ export default {
       userKey: this.common.getCookie("user_key"),
       shop_id: "",
       goodsId: this.$route.query.goodsId,
+      openType:"",
       popupVisible: false,
       productsReviews: false,
       shopCarNum: 1,
@@ -506,6 +507,7 @@ export default {
       });
     },
     buying() {
+      //立即购买的方法
       var _self = this;
       if (!_self.userId || _self.userId == "") {
         _self.$router.push({
@@ -523,6 +525,23 @@ export default {
           shopId: _self.shop_id
         }
       });
+    },
+    openPopView(type){
+      //加入购物车和立即购买的方法
+      var _self = this;
+      _self.popupVisible = true;
+      _self.openType = type;
+    },
+    config(){
+      //弹出框确认按钮
+      var _self = this;
+      this.popupVisible = false;
+      var openType = _self.openType;
+      if(openType == "addCar"){
+        _self.addShopCar();
+      }else{
+        _self.buying();
+      }
     }
   }
 };

@@ -30,15 +30,28 @@
         </div>
 
       </div>
+      <order-goods-list
+        :goodsImage="testImage"
+        :goodsName="testName"
+        :spec="testSpec"
+      ></order-goods-list>
     </div>
   </div>
 </template>
 
 <script>
+import orderGoodsList from "../../components/order_goods_list";
 export default {
   name: "confirmOrder",
+  components:{
+    "order-goods-list":orderGoodsList
+  },
   data() {
-    return {};
+    return {
+      testImage:"http://mall.jscntech.com/image.php/shop/data/upload/media/99eb64ba4386919cf1af7e806cad0527/10020/19/image/20180605/1528182333488568.jpg",
+      testName:"润唐迷你电饭煲RTFB-20HW",
+      testSpec:"RTFB-20HW"
+    };
   },
   mounted() {},
   methods: {
