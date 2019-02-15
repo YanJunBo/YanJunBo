@@ -18,6 +18,11 @@ export default {
 </script>
 
 <style>
+#app {
+  font-family: "MicrosoftYaHei";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a {
     text-decoration: none;
     color: #303030;
