@@ -125,6 +125,10 @@ export default {
   },
   mounted() {
     this.loadData();
+    let arr = [1,2,3,4,5,6];
+    let newArr = arr.map((items,index,arr) => {
+      console.log(items);
+    })
   },
   methods: {
     productDetil(id) {

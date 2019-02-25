@@ -237,7 +237,7 @@ export default {
       userKey: this.common.getCookie("user_key"),
       shop_id: "",
       goodsId: this.$route.query.goodsId,
-      openType:"",
+      openType: "",
       popupVisible: false,
       productsReviews: false,
       shopCarNum: 1,
@@ -465,7 +465,6 @@ export default {
     },
     delFavoritesGoods() {
       var _self = this;
-      //http://mall.jscntech.com//index.php?ctl=Buyer_Favorites&met=delFavoritesGoods&typ=json
       _self.common.post(
         _self.apiUrl.shopUrl +
           "/index.php?ctl=Buyer_Favorites&met=delFavoritesGoods&typ=json",
@@ -487,7 +486,7 @@ export default {
     },
     minus() {
       var _self = this;
-      if (_self.shopCarNum == 0) {
+      if (_self.shopCarNum == 0) {  
         return;
       }
       _self.shopCarNum--;
@@ -509,37 +508,58 @@ export default {
     buying() {
       //立即购买的方法
       var _self = this;
+      ///index.php?ctl=Goods_Goods&met=checkVirtual&typ=json
+      ///index.php?ctl=Buyer_Cart&met=addCart&typ=json
       if (!_self.userId || _self.userId == "") {
         _self.$router.push({
           path: "../user/login",
-          query: {
-           
-          }
+          query: {}
         });
         return;
       }
-      _self.$router.push({
-        path: "confirm_order",
-        query: {
-          goodsId: _self.goodsId,
-          shopId: _self.shop_id
-        }
+      console.log({
+        k: _self.userKey,
+        u: _self.userId,
+        goods_id: _self.goodsId,
+        goods_num: _self.shopCarNum
       });
+      return;
+      _self.post(
+        _self.apiUrl.shopUrl + "/index.php?ctl=Buyer_Cart&met=addCart&typ=json",
+        {
+          k: _self.userKey,
+          u: _self.userId,
+          goods_id: _self.goodsId,
+          goods_num: _self.shopCarNum
+        },
+        data => {
+          if(data){
+            
+          }
+        }
+      );
+      // _self.$router.push({
+      //   path: "confirm_order",
+      //   query: {
+      //     goodsId: _self.goodsId,
+      //     shopId: _self.shop_id
+      //   }
+      // });
     },
-    openPopView(type){
+    openPopView(type) {
       //加入购物车和立即购买的方法
       var _self = this;
       _self.popupVisible = true;
       _self.openType = type;
     },
-    config(){
+    config() {
       //弹出框确认按钮
       var _self = this;
       this.popupVisible = false;
       var openType = _self.openType;
-      if(openType == "addCar"){
+      if (openType == "addCar") {
         _self.addShopCar();
-      }else{
+      } else {
         _self.buying();
       }
     }
